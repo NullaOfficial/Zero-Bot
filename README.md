@@ -1,16 +1,16 @@
 # Zero-Bot
 
 # Indice
-  Materiales------------------------1
-  Descripcion de componentes--------2
-  Diagrama de cableado--------------3
-  Modelado 3D/Construccion----------4
-  Programacion----------------------5
-  Getting started-------------------6
-  Resumen---------------------------7
-  Conclusiones----------------------8
-  Recomendaciones-------------------9
-  Trabajos futuros-----------------10
+Materiales------------------------1
+Descripcion de componentes--------2
+Diagrama de cableado--------------3
+Modelado 3D/Construccion----------4
+Programacion----------------------5
+Getting started-------------------6
+Resumen---------------------------7
+Conclusiones----------------------8
+Recomendaciones-------------------9
+Trabajos futuros-----------------10
 
 # Materiales
 
