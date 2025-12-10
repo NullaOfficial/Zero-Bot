@@ -35,7 +35,7 @@ Trabajos futuros-----------------10
 
 # Diagrama del cableado
 
-<img width="800" src="[Robotica](https://github.com/user-attachments/assets/03bad444-3841-421e-a85f-5e27aee990e9)">
+<img width="800" src="https://github.com/user-attachments/assets/03bad444-3841-421e-a85f-5e27aee990e9">
 
 # Modelado 3D/Construccion
 
