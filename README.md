@@ -37,7 +37,7 @@ Trabajos futuros------------------9
 
 -MegaPi: Es una placa basada en Arduino Mega 2560 (utiliza el microcontrolador ATmega2560), lo que le otorga una gran cantidad de puertos de entrada/salida (I/O) y una alta capacidad de procesamiento.
 
--Motores DC de mBlock: Motores de Corriente Continua (DC) que convierten la energía eléctrica en movimiento rotacional. Si son específicos de mBlock/Makeblock, a menudo vienen con un reductor integrado (engranajes) y pueden tener terminales de conexión diseñados para los puertos de la MegaPi.
+-Motores DC de mBlock: Motores de Corriente Continua (DC) que convierten la energía eléctrica en movimiento rotacional.
 
 -HC-SR04: Un sensor de rango que utiliza ondas ultrasónicas para medir distancias.
 
