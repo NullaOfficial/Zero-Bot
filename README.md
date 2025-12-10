@@ -31,8 +31,11 @@ Trabajos futuros-----------------10
 
 # Descripcion de componentes
 
+
+
 # Diagrama del cableado
 
+<img width="800" alt="[Robotica](https://github.com/user-attachments/assets/03bad444-3841-421e-a85f-5e27aee990e9)">
 
 
 # Modelado 3D/Construccion
