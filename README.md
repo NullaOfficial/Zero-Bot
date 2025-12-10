@@ -43,6 +43,8 @@ Trabajos futuros------------------9
 
 -Jumpers: Cables delgados con conectores en los extremos (macho/hembra) que se utilizan para interconectar componentes electrónicos.
 
+
+
 # Diagrama del cableado
 
 <img width="800" src="https://github.com/user-attachments/assets/03bad444-3841-421e-a85f-5e27aee990e9">
