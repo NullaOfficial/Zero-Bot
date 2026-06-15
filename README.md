@@ -54,7 +54,7 @@
 	| 4 | [Lever wire connectors](https://www.amazon.com/Conductor-Compact-Connectors-Electrical-Terminals/dp/B0D9Y5XFQC/ref=sr_1_2_sspa?sr=8-2-spons) | $9.99 | $39.96 |
 	| 1 | [Buck Converter 3A 15W Type-C](https://www.amazon.com/-/es/Convertidor-Impermeable-Adaptador-corriente-compatible/dp/B0D2MTJQK8) | $8.79 | $8.79 |
 	| 1 | [MAKEBLOCK MegaPi (from mbot mega)](https://www.robotshop.com/products/makeblock-mbot-mega-robot-car-bluetooth-dongle?qd=09ee589fedd6f0b70db366bd5f5dcf45) | $136.39 | $136.39 |
-	| 1 | ON OFF Switch | $2.50 | $2.50 |
+	| 1 | a | $2.50 | $2.50 |
 	| 1 | [LED Traffic Light Module](https://www.amazon.com/Traffic-Light-Module-Board-Arduino/dp/B07R1KJ4DT) | $5.49 | $5.49 |
 	| | | | **$505.55** |
 
@@ -62,7 +62,7 @@
 
 	| Foto| Descripción |
 	|---|---|
-	| IMX219 Camera  | a |
+	| Yfrobot kit <div  align="center"> <div  style="width:290 px"> ![halbi](https://funduinoshop.com/media/image/84/6f/82/YFROBOT-chassis-kit-mit-lenkachse-technische-zeichnung_600x600@2x.png) </div> </div>  | El chasis modular YFROBOT 4WD combina tracción en las cuatro ruedas con un sistema de dirección tipo automóvil para ofrecer mayor estabilidad y un control preciso. Diseñado con soportes específicos para controladores como Arduino o Raspberry Pi, simplifica el ensamblaje mecánico y permite añadir sensores o accesorios fácilmente. Al reducir la complejidad del diseño desde cero, resulta una plataforma ideal en educación y competiciones para que los equipos se concentren directamente en la programación, la navegación autónoma y los sistemas de control. |
 	| Raspberry PI 4 B <div align="center"> <img width="293" height="172" alt="images" src="https://github.com/user-attachments/assets/5c007a1e-273e-4ce2-89a7-fa99dd9b069b" /> </div> | La Raspberry Pi 4 Modelo B es un potente ordenador de placa única (SBC) del tamaño de una tarjeta de crédito desarrollado por la Fundación Raspberry Pi. Se utiliza ampliamente en robótica, proyectos de IoT y 	sistemas embebidos debido a su versatilidad, rendimiento y precio asequible. |
 	| a | a |
 	| a | a |
@@ -97,7 +97,7 @@
 
 	* Open Challenge:
 
-		- Estrategia: Nuestra estrategia se basa en algoritmos de visión artificial desarrollados por nosotros utilizando **[OpenCV](https://opencv.org/)** con Python; por eso hemos elegido este ordenador, ya que tiene un 		bajo consumo eléctrico (5 V, 3 A), a diferencia del Pi 5 (5 V, 5 A), además de ser una mejor opción que el Pi 3 B que utilizamos la última vez.
+		- Estrategia: 
 		
 		- ROIS:
 
