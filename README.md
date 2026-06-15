@@ -11,7 +11,7 @@
 
  - ### Halbi The Green:
 
-    * Photo:
+    * #### Photo:
 
 	<div align="center">
 
@@ -19,43 +19,43 @@
 
 	</div>
 
-	* Dirección:
+	* #### Dirección:
 
-		- #### Ackerman: La dirección Ackermann es una configuración geométrica utilizada en el sistema de dirección de vehículos (desde automóviles convencionales hasta robots con ruedas) para resolver el problema de que 			las ruedas giren en ángulos diferentes cuando el vehículo toma una curva.
+		- Ackerman: La dirección Ackermann es una configuración geométrica utilizada en el sistema de dirección de vehículos (desde automóviles convencionales hasta robots con ruedas) para resolver el problema de que las ruedas giren en ángulos 					diferentes cuando el vehículo toma una curva.
 
-			En un sistema de dirección simple (donde ambas ruedas giran exactamente el mismo ángulo), la rueda interna arrastra y patina. La geometría Ackermann evita esto, logrando que el vehículo gire de forma suave, 				sin derrapes y reduciendo drásticamente el desgaste de los neumáticos.
+			En un sistema de dirección simple (donde ambas ruedas giran exactamente el mismo ángulo), la rueda interna arrastra y patina. La geometría Ackermann evita esto, logrando que el vehículo gire de forma suave, sin derrapes y reduciendo 					drásticamente el desgaste de los neumáticos.
 
 			Aunque el sistema lleva el nombre de Rudolph Ackermann, él no fue el inventor, sino el promotor.
 
-			El origen (1816): El diseño original fue inventado en Munich por el constructor de carruajes alemán Georg Lankensperger. Su objetivo era evitar que los carruajes de caballos volcaran o arrastraran las ruedas 			al girar en esquinas cerradas.
+			El origen (1816): El diseño original fue inventado en Munich por el constructor de carruajes alemán Georg Lankensperger. Su objetivo era evitar que los carruajes de caballos volcaran o arrastraran las ruedas al girar en esquinas cerradas.
 
-			La patente (1818): Rudolph Ackermann, un editor y empresario inglés que vio el potencial del invento, compró los derechos para el mercado británico y patentó el diseño en Inglaterra en 1818. Debido a esto, la 			configuración se popularizó en todo el mundo anglosajón bajo su nombre.
+			La patente (1818): Rudolph Ackermann, un editor y empresario inglés que vio el potencial del invento, compró los derechos para el mercado británico y patentó el diseño en Inglaterra en 1818. Debido a esto, la configuración se popularizó en 			todo el mundo anglosajón bajo su nombre.
 
-			Era moderna: Con la llegada de los automóviles a finales del siglo XIX, el principio de Ackermann pasó de los carruajes a los coches autopropulsados y, hoy en día, sigue siendo la base geométrica de casi 				cualquier vehículo de cuatro ruedas, incluidos los chasis de robótica móvil.
+			Era moderna: Con la llegada de los automóviles a finales del siglo XIX, el principio de Ackermann pasó de los carruajes a los coches autopropulsados y, hoy en día, sigue siendo la base geométrica de casi cualquier vehículo de cuatro ruedas, 			incluidos los chasis de robótica móvil.
 
-			Cuando un vehículo toma una curva, la rueda que queda en el interior de la curva recorre un círculo más pequeño (un radio más corto) que la rueda que queda en el exterior. Para que ambas ruedas giren 					limpiamente sin oponerse entre sí, todas las ruedas del vehículo deben girar alrededor de un mismo punto central común (llamado Centro Instantáneo de Rotación o ICR). Para lograr esto:
+			Cuando un vehículo toma una curva, la rueda que queda en el interior de la curva recorre un círculo más pequeño (un radio más corto) que la rueda que queda en el exterior. Para que ambas ruedas giren limpiamente sin oponerse entre sí, todas 			las ruedas del vehículo deben girar alrededor de un mismo punto central común (llamado Centro Instantáneo de Rotación o ICR). Para lograr esto:
 
  			#### 1. La rueda interna debe girar un ángulo más cerrado.
 
 			#### 2. La rueda externa debe girar un ángulo más abierto
 
-		- Uso:
+		- #### Uso:
 
-	* Transmisión:
+	* ### Transmisión:
 
-		- Velocidad:
+		- #### Velocidad:
 
-		- Peso:
+		- #### Peso:
 
-		- Torque:
+		- #### Torque:
 
-	* 3D Printed Parts:
+	* ### 3D Printed Parts:
 
-		- Impresora:
+		- #### Impresora:
 
-		- PETG vs PLA:
+		- #### PETG vs PLA:
 
-		- Piezas: 
+		- #### Piezas: 
 			
 | Component & Preview | Design & Geometry | Engineering Purpose |
 |---|---|---|
@@ -65,9 +65,9 @@
 | RaspberryPi Base <br><br><img width="400" height="400" alt="RaspberryPiBase (1)" src="https://github.com/user-attachments/assets/2403b708-2e1d-4360-9504-aae68c0027d1" /> | A flat, mid-level modular platform featuring four integrated corner standoffs to mount the Raspberry Pi 4 safely. The front section of the base integrates a dual-ear hinge mount equipped with internal locking teeth that mate directly with the Camera Case hinge. | Serves as a dual-purpose structural bridge. It provides a stable, elevated mount for the high-level on-board computer, ensuring optimal heat dissipation via natural convection to prevent CPU thermal throttling. Concurrently, its integrated geared mount firmly locks the camera assembly at the front, eliminating the need for extra components and saving valuable chassis space. |
 | Ultrasonic Case <br><br><img width="400" height="400" alt="UltrasonicSensorCase" src="https://github.com/user-attachments/assets/f9696c40-13e6-46b5-9712-2d7849a80005" /> | A compact, dual-barrel protective bracket custom-tailored to snugly encapsulate the transmitter and receiver cylinders of the ultrasonic sensor module. It features integrated rear mounting tabs and lower flanges for seamless mechanical coupling to the forward crossbeams of the chassis frame. | Provides a rigid, vibration-isolated housing that keeps the ultrasonic sensor perfectly perpendicular to the track's horizontal plane. This precise alignment eliminates acoustic signal distortion and wave scattering, ensuring highly accurate real-time distance measurements for obstacle detection and emergency braking maps. |
 
-## 2. Componentes
+# 2. Componentes
 
-- #### Precios:
+- ### Precios:
 
 	| Cantidad | Productos | Precio | Total |
 	|---|---|---|---|
@@ -82,7 +82,7 @@
 	| 1 | [LED Traffic Light Module](https://www.amazon.com/Traffic-Light-Module-Board-Arduino/dp/B07R1KJ4DT) | $5.49 | $5.49 |
 	| | | | **$505.55** |
 
-- #### Descripción:
+- ### Descripción:
 
 	| Foto| Descripción |
 	|---|---|
@@ -95,13 +95,13 @@
 	| ArduCam IMX219 8MP <div  align="center"> ![Encorder](https://cdn.arducam.com/wp-content/uploads/2022/04/Arducam_IMX219_MIPI_Pi_B0392-8.jpg) </div> | La ArduCam IMX219 de 8MP es un módulo de cámara compacto basado en el sensor Sony IMX219, el mismo estándar de la Raspberry Pi Camera v2, que equilibra resolución y rendimiento para proyectos de visión artificial y robótica. Se conecta mediante la interfaz CSI (Camera Serial Interface), lo que garantiza una transferencia de datos a alta velocidad y con baja latencia hacia computadoras como Raspberry Pi o Jetson Nano. Este diseño la convierte en una solución eficiente y de fácil integración para sistemas embebidos que requieren procesamiento de imagen en tiempo real. |
 	| Buck Converter 3A 15W Type-C <div  align="center"> ![camera](https://m.media-amazon.com/images/I/61pOfxNxUnL._AC_UF1000,1000_QL80_.jpg) </div> | El módulo **convertidor buck tipo C de 3A y 15W** es un regulador reductor de CC-CC que transforma voltajes de entrada elevados en una salida baja y estable con una eficiencia del 85 al 95%. En este proyecto, se utilizó para conectar la batería **LiPo Zeee 3S** (de hasta 12.6V) a la **Raspberry Pi 4B**, la cual exige un suministro constante de **5V y hasta 3A**. Debido a que el voltaje directo de la batería dañaría la placa, el convertidor reduce y regula la tensión de manera segura, protegiendo los componentes contra sobrevoltajes, minimizando las pérdidas de energía por calor y garantizando un rendimiento estable del sistema a medida que la batería se descarga. |
 
-- #### Disposición de Sensores y Justificación:
+- ### Disposición de Sensores y Justificación:
 
-- #### Batería:
+- ### Batería:
 
-- #### Presupuesto de Energía:
+- ### Presupuesto de Energía:
 
-- #### Diagrama de Cableado:
+- ### Diagrama de Cableado:
 
 <div align="center">
 
@@ -109,19 +109,19 @@
 
 </div>
 
-## 3.  Software
+# 3.  Software
 
-- #### Utils:
+- ### Utils:
 
-	- Color Tester:
+	- #### Color Tester:
 
-	- ROI Detector:
+	- #### ROI Detector:
 
-- #### MegaPiController:
+- ### MegaPiController:
 
-- #### Arduino Controller:
+- ### Arduino Controller:
 
-	* Open Challenge:
+	* #### Open Challenge:
 
 		- Estrategia: 
 		
@@ -131,7 +131,7 @@
 
 		- Diagrama de Flujo:
 
-	- Obstacle Challenge:
+	- #### Obstacle Challenge:
 
 		- Estrategia:
 		
@@ -141,14 +141,14 @@
 
 		- Diagrama de Flujo:
 
-## 4. Challenges
+# 4. Challenges
 
-- #### Problemas de Hardware: 
+- ### Problemas de Hardware: 
 
-	- Chasis demasiado pequeño 
+	- #### Chasis demasiado pequeño 
 	
-	- La batería ocupa demasiado espacio
+	- #### La batería ocupa demasiado espacio
 
-- #### Problemas de Software:
+- ### Problemas de Software:
 
-	- L
+	- #### a
