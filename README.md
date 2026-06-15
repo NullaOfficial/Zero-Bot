@@ -1,70 +1,127 @@
-# Zero-Bot
+## 1- Mobilidad y diseño
 
-# Indice
-Materiales------------------------1
+- #### Opciones de diseño:
 
-Descripcion de componentes--------2
+	| Foto | Descripción |  Nombre |
+	| --- | --- | --- | --- |
+	| a | a | Cyber Cooper |
+	| a | a | Cooper |
+	| a | a | Halbi |
+	| a | a | The Fridge |
 
-Diagrama de cableado--------------3
+ - #### Halbi The Green:
 
-Modelado 3D/Construccion----------4
+	* Dirección:
 
-Programacion----------------------5
+		- Ackerman: 
 
-Resumen---------------------------6
+		- Uso
 
-Conclusiones----------------------7
+	* Transmisión:
 
-Recomendaciones-------------------8
+		- Velocidad
 
-Trabajos futuros------------------9
+		- Peso
 
-# Materiales
+		- Torque
 
-| Materiales | Cantidad | Precio | Precio Total |
-|:-------|:-:|:-:|--:|
-| MegaPi | 1 | 0 | 0 |
-| DC Motor Driver V1.0 | 1 | 0 | 0 |
-| Motores DC de mBlock | 2 | 0 | 0 |
-| HC-SR04 | 1 | 0 | 0 |
-| Ball Caster | 1 | 0 | 0 |
-| Baterias 18650 | 2 | 0 | 0 |
-| Jumpers | (suficientes) | 0 | 0 |
-| Ruedas  | 2 | 0 | 0 |
-| Chasis | 1 | 0 | 0 |
+	* 3D Printed Parts:
 
-# Descripcion de componentes
+		- Impresora:
 
--MegaPi: Es una placa basada en Arduino Mega 2560 (utiliza el microcontrolador ATmega2560), lo que le otorga una gran cantidad de puertos de entrada/salida (I/O) y una alta capacidad de procesamiento.
+		- PETG vs PLA:
 
--Motores DC de mBlock: Motores de Corriente Continua (DC) que convierten la energía eléctrica en movimiento rotacional.
-
--HC-SR04: Un sensor de rango que utiliza ondas ultrasónicas para medir distancias.
-
--Jumpers: Cables delgados con conectores en los extremos (macho/hembra) que se utilizan para interconectar componentes electrónicos.
+		- Piezas: 
+			
+			| Component & Preview | Design & Geometry | Engineering Purpose |
+			| --- | --- | --- | --- |
+			|Battery Case <br><br><img width="400" height="400" alt="BatteryCase" src="https://github.com/user-attachments/assets/a5362844-dd0e-4073-bef8-bb034bae3ad9" /> | Designed as a vertical tower cage structured with four reinforced pillars on each side, integrated directly onto a solid mounting base with corner screw eyelets. The side walls feature large circular cutouts to minimize material weight while allowing maximum passive airflow to prevent thermal stress on the LiPo cells during high discharge rates. The top pillars include slotted retention eyelets for secure strap fastening. | Centralizes the combined mass of the battery cells vertically along the central geometric axis of the chassis. This open-cage design ensures quick access for battery replacement between runs while providing rigid structural containment against lateral inertia forces during high-speed cornering. |
+			| Camera Case <br><br><img width="400" height="400" alt="CameraCase" src="https://github.com/user-attachments/assets/7adbc42b-15eb-4677-a0a4-8d9b3c98bab3" /> | A compact, rectangular protective enclosure specifically tailored to encapsulate the IMX219 (Arducam) sensor. The bottom section integrates a robust cylindrical pivot hinge featuring external locking teeth (spur gear profile) designed to mesh perfectly with a matching mounting base for mechanical angle locking. | Shields the delicate camera PCB from external debris or direct track impacts. The interlocking geared hinge allows the camera's pitch to be adjusted and mechanically locked at a precise 15-degree downward tilt angle, preventing any unwanted lens shifting caused by high-frequency chassis vibrations during operation. |
+			| MegaPi Case <br><br><img width="400" height="400" alt="MegaPiBase (1)" src="https://github.com/user-attachments/assets/8db95bf2-a29a-468c-ace8-e21bb1fae9f6" /> | A robust low-profile tray equipped with four integrated, heavy-duty vertical standoffs positioned at the corners to secure the main PCB. The base plate features internal layout guides and structural clearance cuts to avoid components on the underside of the board while keeping the profile as close to the chassis as possible. | Functions as a rigid mechanical cradle for the low-level power electronics. By elevating the PCB via the 3mm integrated standoffs, it prevents electrical short-circuits with the chassis while dampening vibrations. The completely open perimeter guarantees immediate access to the motor screw terminals, power rails, and sensor ports for field maintenance. |
+			| RaspberryPi Base <br><br><img width="400" height="400" alt="RaspberryPiBase (1)" src="https://github.com/user-attachments/assets/2403b708-2e1d-4360-9504-aae68c0027d1" /> | A flat, mid-level modular platform featuring four integrated corner standoffs to mount the Raspberry Pi 4 safely. The front section of the base integrates a dual-ear hinge mount equipped with internal locking teeth that mate directly with the Camera Case hinge. | Serves as a dual-purpose structural bridge. It provides a stable, elevated mount for the high-level on-board computer, ensuring optimal heat dissipation via natural convection to prevent CPU thermal throttling. Concurrently, its integrated geared mount firmly locks the camera assembly at the front, eliminating the need for extra components and saving valuable chassis space. |
+			| Ultrasonic Case <br><br><img width="400" height="400" alt="UltrasonicSensorCase" src="https://github.com/user-attachments/assets/f9696c40-13e6-46b5-9712-2d7849a80005" /> | A compact, dual-barrel protective bracket custom-tailored to snugly encapsulate the transmitter and receiver cylinders of the ultrasonic sensor module. It features integrated rear mounting tabs and lower flanges for seamless mechanical coupling to the forward crossbeams of the chassis frame. | Provides a rigid, vibration-isolated housing that keeps the ultrasonic sensor perfectly perpendicular to the track's horizontal plane. This precise alignment eliminates acoustic signal distortion and wave scattering, ensuring highly accurate real-time distance measurements for obstacle detection and emergency braking maps. |
 
 
 
-# Diagrama del cableado
+## 2. Componentes
 
-<img width="800" src="https://github.com/user-attachments/assets/03bad444-3841-421e-a85f-5e27aee990e9">
+- #### Precios:
 
-# Modelado 3D/Construccion
+	| Cantidad | Productos | Precio | Total |
+	|---|---|---|---|
+	| 1 | IMX219 Camera | a |
+	| 1 | Raspberry PI 4 B | a | a |
+	| a | a | a | a |
+	| a | a | a | a |
+	| a | a | a | a |
+	| a | a | a | a |
 
-Se empezo creando la base del carro incluyendo los soportes para los componentes electronicos con huecos para el chasis, después se crea el chasis agregandole partes para incrustarse a la base.
+- #### Descripción:
 
-# Resumen
+	| Foto| Descripción |
+	|---|---|---|---|
+	| IMX219 Camera | a |
+	| <div align="center"> <img width="293" height="172" alt="images" src="https://github.com/user-attachments/assets/5c007a1e-273e-4ce2-89a7-fa99dd9b069b" />
+ </div> | The Raspberry Pi 4 Model B is a powerful, credit-card-sized single-board computer (SBC) developed by the Raspberry Pi Foundation. It is widely used in robotics, IoT projects, and embedded systems due to its versatility, performance, and affordability. |
+	| a | a |
+	| a | a |
+	| a | a |
+	| a | a |
 
-El proyecto Zero-Bot documenta el diseño y la implementación de un robot móvil de tracción diferencial. Utilizando la placa MegaPi como controlador principal y un sensor HC-SR04 para la percepción, el bot fue programado para evitar obstáculos automáticamente. El chasis, diseñado en CAD, integra los dos Motores DC de mBlock, la MegaPi y la fuente de alimentación (Baterías 18650), proporcionando una plataforma estable y compacta para la locomoción autónoma.
+- #### Disposición de Sensores y Justificación:
 
-# Conclusiones
+- #### Batería:
 
-El objetivo de crear un robot evasor de obstáculos fue cumplido. La MegaPi demostró ser una plataforma robusta, especialmente en el manejo de múltiples motores.
+- #### Presupuesto de Energía:
 
-# Recomendaciones
+- #### Diagrama de Cableado:
 
-Sustituir las 18650 por una fuente de alimentación con mayor tasa de descarga.
+<div align="center">
 
-# Trabajos futuros
+<img width="2960" height="1625" alt="L-N-M@1 25x" src="https://github.com/user-attachments/assets/13e15df3-6f13-4d22-9dfd-a9a075e6561c" />
 
-Crear un coche para la categoria de Futuros Ingenieros de la WRO (World Robotics Olympiad) con mi equipo.
+</div>
+
+## 3.  Software
+
+- #### Utils:
+
+	- Color Tester:
+
+	- ROI Detector:
+
+- #### MegaPiController:
+
+- #### Arduino Controller:
+
+	* Open Challenge:
+
+		- Estrategia:
+		
+		- ROIS:
+
+		- Contador de Loops:
+
+		- Diagrama de Flujo:
+
+	- Obstacle Challenge:
+
+		- Estrategia:
+		
+		- ROIS:
+
+		- Contador de Loops:
+
+		- Diagrama de Flujo:
+
+## 4. Challenges
+
+- #### Problemas de Hardware: 
+
+	- Chasis demasiado pequeño 
+	
+	- La batería ocupa demasiado espacio
+
+- #### Problemas de Software:
+
+	- L
