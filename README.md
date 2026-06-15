@@ -1,6 +1,6 @@
 ## 1- Mobilidad y diseño
 
-- #### Opciones de diseño:
+- ### Opciones de diseño:
 
 	| Foto | Descripción | Nombre |
 	|---|---|---|
@@ -9,7 +9,7 @@
 	| a | a | Halbi |
 	| a | a | The Fridge |
 
- - #### Halbi The Green:
+ - ### Halbi The Green:
 
     * Photo:
 
