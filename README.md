@@ -11,7 +11,7 @@
 
  - ### Halbi The Green:
 
-    * #### Photo:
+    * #### Foto:
 
 	<div align="center">
 
