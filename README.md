@@ -11,11 +11,11 @@
 
  - #### Halbi The Green:
 
-    *Photo:
+    * Photo:
 
 <div align="center">
 
-<img width="3060" height="4080" alt="604003001-cc130bf0-8547-48cc-847e-28dbd9029fba" src="https://github.com/user-attachments/assets/f1dc12a1-dbfc-46f3-9a21-a679aa1aa3db" />
+<img width="2060" height="3080" alt="604003001-cc130bf0-8547-48cc-847e-28dbd9029fba" src="https://github.com/user-attachments/assets/f1dc12a1-dbfc-46f3-9a21-a679aa1aa3db" />
 
 </div>
 
