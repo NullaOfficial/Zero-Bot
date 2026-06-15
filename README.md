@@ -21,9 +21,7 @@
 
 	* #### Dirección:
 
-		- Ackerman: La dirección Ackermann es una configuración geométrica utilizada en el sistema de dirección de vehículos (desde automóviles convencionales hasta robots con ruedas) para resolver el problema de que las ruedas giren en ángulos 					diferentes cuando el vehículo toma una curva.
-
-			En un sistema de dirección simple (donde ambas ruedas giran exactamente el mismo ángulo), la rueda interna arrastra y patina. La geometría Ackermann evita esto, logrando que el vehículo gire de forma suave, sin derrapes y reduciendo 					drásticamente el desgaste de los neumáticos.
+		- Ackerman: La dirección Ackermann es una configuración geométrica utilizada en el sistema de dirección de vehículos (desde automóviles convencionales hasta robots con ruedas) para resolver el problema de que las ruedas giren en ángulos 					diferentes cuando el vehículo toma una curva. En un sistema de dirección simple (donde ambas ruedas giran exactamente el mismo ángulo), la rueda interna arrastra y patina. La geometría Ackermann evita esto, logrando que el vehículo gire de 			forma suave, sin derrapes y reduciendo drásticamente el desgaste de los neumáticos.
 
 			Aunque el sistema lleva el nombre de Rudolph Ackermann, él no fue el inventor, sino el promotor.
 
@@ -35,11 +33,11 @@
 
 			Cuando un vehículo toma una curva, la rueda que queda en el interior de la curva recorre un círculo más pequeño (un radio más corto) que la rueda que queda en el exterior. Para que ambas ruedas giren limpiamente sin oponerse entre sí, todas 			las ruedas del vehículo deben girar alrededor de un mismo punto central común (llamado Centro Instantáneo de Rotación o ICR). Para lograr esto:
 
- 			#### 1. La rueda interna debe girar un ángulo más cerrado.
+ 			1. La rueda interna debe girar un ángulo más cerrado.
 
-			#### 2. La rueda externa debe girar un ángulo más abierto
+			2. La rueda externa debe girar un ángulo más abierto
 
-		- Uso:
+		- Uso: En el contexto del proyecto, implementamos este sistema mecánico para controlar el guiado del robot mediante un único servomotor central acoplado a un varillaje asimétrico. A diferencia de los sistemas de tracción diferencial (donde el 			giro se logra variando la velocidad de las ruedas laterales), la geometría Ackermann nos permite replicar la conducción de un automóvil real, garantizando trayectorias fluidas, mayor estabilidad a altas velocidades y un control preciso en curvas 		cerradas. Esto resulta fundamental para optimizar los algoritmos de navegación autónoma y seguimiento de líneas en entornos competitivos.
 
 	* ### Transmisión:
 
