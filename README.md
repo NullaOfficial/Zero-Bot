@@ -93,7 +93,7 @@
 
 	* Open Challenge:
 
-		- Estrategia:
+		- Estrategia: Nuestra estrategia se basa en algoritmos de visión artificial desarrollados por nosotros utilizando **[OpenCV](https://opencv.org/)** con Python; por eso hemos elegido este ordenador, ya que tiene un 		bajo consumo eléctrico (5 V, 3 A), a diferencia del Pi 5 (5 V, 5 A), además de ser una mejor opción que el Pi 3 B que utilizamos la última vez.
 		
 		- ROIS:
 
