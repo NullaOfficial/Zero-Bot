@@ -56,7 +56,7 @@
 	| 1 | [MAKEBLOCK MegaPi (from mbot mega)](https://www.robotshop.com/products/makeblock-mbot-mega-robot-car-bluetooth-dongle?qd=09ee589fedd6f0b70db366bd5f5dcf45) | $136.39 | $136.39 |
 	| 1 | ON OFF Switch | $2.50 | $2.50 |
 	| 1 | [LED Traffic Light Module](https://www.amazon.com/Traffic-Light-Module-Board-Arduino/dp/B07R1KJ4DT) | $5.49 | $5.49 |
-	| **Total** | | | **$505.55** |
+	| | | | **$505.55** |
 
 - #### Descripción:
 
