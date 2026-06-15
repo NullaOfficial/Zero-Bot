@@ -11,7 +11,7 @@
 
  - ### Halbi The Green:
 
-    * #### Foto:
+    * ### Foto:
 
 	<div align="center">
 
@@ -19,7 +19,7 @@
 
 	</div>
 
-	* #### Dirección:
+	* ### Dirección:
 
 		- Ackerman: La dirección Ackermann es una configuración geométrica utilizada en el sistema de dirección de vehículos (desde automóviles convencionales hasta robots con ruedas) para resolver el problema de que las ruedas giren en ángulos 					diferentes cuando el vehículo toma una curva. En un sistema de dirección simple (donde ambas ruedas giran exactamente el mismo ángulo), la rueda interna arrastra y patina. La geometría Ackermann evita esto, logrando que el vehículo gire de 			forma suave, sin derrapes y reduciendo drásticamente el desgaste de los neumáticos.
 
