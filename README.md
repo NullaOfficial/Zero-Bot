@@ -61,8 +61,9 @@
 	| Foto| Descripción |
 	|---|---|
 	| IMX219 Camera | a |
-	| <div align="center"> <img width="293" height="172" alt="images" src="https://github.com/user-attachments/assets/5c007a1e-273e-4ce2-89a7-fa99dd9b069b" />
- </div> | The Raspberry Pi 4 Model B is a powerful, credit-card-sized single-board computer (SBC) developed by the Raspberry Pi Foundation. It is widely used in robotics, IoT projects, and embedded systems due to its versatility, performance, and affordability. |
+	| Raspberry PI 4 B
+	<div align="center"> <img width="293" height="172" alt="images" src="https://github.com/user-attachments/assets/5c007a1e-273e-4ce2-89a7-fa99dd9b069b" />
+ 	</div> | The Raspberry Pi 4 Model B is a powerful, credit-card-sized single-board computer (SBC) developed by the Raspberry Pi Foundation. It is widely used in robotics, IoT projects, and embedded systems due to its 	versatility, performance, and affordability. |
 	| a | a |
 	| a | a |
 	| a | a |
