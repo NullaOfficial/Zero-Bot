@@ -11,7 +11,7 @@
 
  - ### Halbi The Green:
 
-    * ### Foto:
+    - ### Foto:
 
 	<div align="center">
 
@@ -19,7 +19,7 @@
 
 	</div>
 
-	* ### Dirección:
+	- ### Dirección:
 
 		- Ackerman: La dirección Ackermann es una configuración geométrica utilizada en el sistema de dirección de vehículos (desde automóviles convencionales hasta robots con ruedas) para resolver el problema de que las ruedas giren en ángulos 					diferentes cuando el vehículo toma una curva. En un sistema de dirección simple (donde ambas ruedas giran exactamente el mismo ángulo), la rueda interna arrastra y patina. La geometría Ackermann evita esto, logrando que el vehículo gire de 			forma suave, sin derrapes y reduciendo drásticamente el desgaste de los neumáticos.
 
@@ -43,7 +43,7 @@
 		<img width="1800" height="1100" alt="Angulo-Ackermann-dibujo" src="https://github.com/user-attachments/assets/58cf9434-8c1e-4c22-8b9f-8c61ecde4aa3" />
 		</div>
 
-	* ### Transmisión:
+	- ### Transmisión:
 
 		- Velocidad:
 
@@ -51,7 +51,7 @@
 
 		- Torque:
 
-	* ### 3D Printed Parts:
+	- ### 3D Printed Parts:
 
 		- Impresora:
 
@@ -64,6 +64,7 @@
 | Destaca por una estabilidad térmica superior, soportando temperaturas de trabajo de hasta 75°C u 80°C sin perder su rigidez ni sufrir deformaciones estructurales. Esto permite colocarlo directamente junto a disipadores, motores DC o reguladores de voltaje. Además, posee propiedades hidrofóbicas y una alta resistencia química frente a alcoholes, aceites, grasas y a la degradación por exposición a la intemperie. | Posee una baja resistencia térmica, con un punto de ablandamiento (temperatura de transición vítrea) situado entre los 50°C y 55°C. Esto lo vuelve vulnerable a la deformación geométrica si se expone al calor disipado por motores de alta potencia o si el robot opera en entornos cálidos. Asimismo, su resistencia a la degradación por rayos UV y agentes químicos es limitada a largo plazo. |
 | Exige condiciones de impresión más estrictas, con temperaturas de boquilla de 230°C a 250°C y cama caliente obligatoria entre 70°C y 90°C. Es propenso a generar hilos finos (stringing) y requiere un control riguroso de la humedad, ya que es altamente higroscópico y absorbe el agua del ambiente rápidamente, lo que degrada la calidad de la pieza si el filamento no se almacena en seco. | Es el material más sencillo de procesar en el taller de robótica, requiriendo temperaturas de boquilla bajas (190°C - 220°C) y una temperatura de cama moderada (50°C - 60°C) o incluso nula. No genera gases nocivos, no sufre de warping (despegue de bordes) y tolera altas velocidades de impresión con ventilación de capa al 100%, facilitando el prototipado rápido de piezas complejas. |
 | Se utiliza de forma prioritaria en los componentes críticos sometidos a estrés físico y térmico. Es la elección correcta para parachoques frontales (bumpers) expuestos a colisiones, soportes para motores DC que generan calor por fricción, estructuras internas que sujetan baterías pesadas (soportando inercias bruscas al frenar o girar) y piezas móviles del varillaje del sistema de dirección. | Se aplica en la fabricación de componentes fijos que exigen máxima precisión dimensional y rigidez absoluta, donde las tolerancias geométricas de los encajes deban ser milimétricas. Es ideal para soportes de sensores ópticos o de líneas (que no deben oscilar), carcasas de cámaras de visión artificial, brackets de sujeción estáticos y maquetas de prueba donde el peso y el ajuste de tornillos sean críticos. |
+
 		- Piezas: 
 			
 | Component & Preview | Design & Geometry | Engineering Purpose |
