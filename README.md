@@ -15,15 +15,15 @@
 
 		- Ackerman: 
 
-		- Uso
+		- Uso:
 
 	* Transmisión:
 
-		- Velocidad
+		- Velocidad:
 
-		- Peso
+		- Peso:
 
-		- Torque
+		- Torque:
 
 	* 3D Printed Parts:
 
@@ -40,8 +40,6 @@
 			| MegaPi Case <br><br><img width="400" height="400" alt="MegaPiBase (1)" src="https://github.com/user-attachments/assets/8db95bf2-a29a-468c-ace8-e21bb1fae9f6" /> | A robust low-profile tray equipped with four integrated, heavy-duty vertical standoffs positioned at the corners to secure the main PCB. The base plate features internal layout guides and structural clearance cuts to avoid components on the underside of the board while keeping the profile as close to the chassis as possible. | Functions as a rigid mechanical cradle for the low-level power electronics. By elevating the PCB via the 3mm integrated standoffs, it prevents electrical short-circuits with the chassis while dampening vibrations. The completely open perimeter guarantees immediate access to the motor screw terminals, power rails, and sensor ports for field maintenance. |
 			| RaspberryPi Base <br><br><img width="400" height="400" alt="RaspberryPiBase (1)" src="https://github.com/user-attachments/assets/2403b708-2e1d-4360-9504-aae68c0027d1" /> | A flat, mid-level modular platform featuring four integrated corner standoffs to mount the Raspberry Pi 4 safely. The front section of the base integrates a dual-ear hinge mount equipped with internal locking teeth that mate directly with the Camera Case hinge. | Serves as a dual-purpose structural bridge. It provides a stable, elevated mount for the high-level on-board computer, ensuring optimal heat dissipation via natural convection to prevent CPU thermal throttling. Concurrently, its integrated geared mount firmly locks the camera assembly at the front, eliminating the need for extra components and saving valuable chassis space. |
 			| Ultrasonic Case <br><br><img width="400" height="400" alt="UltrasonicSensorCase" src="https://github.com/user-attachments/assets/f9696c40-13e6-46b5-9712-2d7849a80005" /> | A compact, dual-barrel protective bracket custom-tailored to snugly encapsulate the transmitter and receiver cylinders of the ultrasonic sensor module. It features integrated rear mounting tabs and lower flanges for seamless mechanical coupling to the forward crossbeams of the chassis frame. | Provides a rigid, vibration-isolated housing that keeps the ultrasonic sensor perfectly perpendicular to the track's horizontal plane. This precise alignment eliminates acoustic signal distortion and wave scattering, ensuring highly accurate real-time distance measurements for obstacle detection and emergency braking maps. |
-
-
 
 ## 2. Componentes
 
@@ -60,9 +58,9 @@
 
 	| Foto| Descripción |
 	|---|---|
-	| IMX219 Camera | a |
+	| IMX219 Camera  | a |
 	| Raspberry PI 4 B <div align="center"> <img width="293" height="172" alt="images" src="https://github.com/user-attachments/assets/5c007a1e-273e-4ce2-89a7-fa99dd9b069b" />
-</div> | The Raspberry Pi 4 Model B is a powerful, credit-card-sized single-board computer (SBC) developed by the Raspberry Pi Foundation. It is widely used in robotics, IoT projects, and embedded systems due to its 	versatility, performance, and affordability. |
+</div> | La Raspberry Pi 4 Modelo B es un potente ordenador de placa única (SBC) del tamaño de una tarjeta de crédito desarrollado por la Fundación Raspberry Pi. Se utiliza ampliamente en robótica, proyectos de IoT y sistemas embebidos debido a su versatilidad, rendimiento y precio asequible. |
 	| a | a |
 	| a | a |
 	| a | a |
