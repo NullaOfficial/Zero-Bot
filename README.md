@@ -21,23 +21,23 @@
 
 	* Dirección:
 
-		- Ackerman: La dirección Ackermann es una configuración geométrica utilizada en el sistema de dirección de vehículos (desde automóviles convencionales hasta robots con ruedas) para resolver el problema de que las 		ruedas giren en ángulos diferentes cuando el vehículo toma una curva.
+		- Ackerman: La dirección Ackermann es una configuración geométrica utilizada en el sistema de dirección de vehículos (desde automóviles convencionales hasta robots con ruedas) para resolver el problema de que las 			ruedas giren en ángulos diferentes cuando el vehículo toma una curva.
 
-		En un sistema de dirección simple (donde ambas ruedas giran exactamente el mismo ángulo), la rueda interna arrastra y patina. La geometría Ackermann evita esto, logrando que el vehículo gire de forma suave, sin 			derrapes y reduciendo drásticamente el desgaste de los neumáticos.
+			En un sistema de dirección simple (donde ambas ruedas giran exactamente el mismo ángulo), la rueda interna arrastra y patina. La geometría Ackermann evita esto, logrando que el vehículo gire de forma suave, 				sin derrapes y reduciendo drásticamente el desgaste de los neumáticos.
 
-		Aunque el sistema lleva el nombre de Rudolph Ackermann, él no fue el inventor, sino el promotor.
+			Aunque el sistema lleva el nombre de Rudolph Ackermann, él no fue el inventor, sino el promotor.
 
-		El origen (1816): El diseño original fue inventado en Munich por el constructor de carruajes alemán Georg Lankensperger. Su objetivo era evitar que los carruajes de caballos volcaran o arrastraran las ruedas al 			girar en esquinas cerradas.
+			El origen (1816): El diseño original fue inventado en Munich por el constructor de carruajes alemán Georg Lankensperger. Su objetivo era evitar que los carruajes de caballos volcaran o arrastraran las ruedas 			al girar en esquinas cerradas.
 
-		La patente (1818): Rudolph Ackermann, un editor y empresario inglés que vio el potencial del invento, compró los derechos para el mercado británico y patentó el diseño en Inglaterra en 1818. Debido a esto, la 			configuración se popularizó en todo el mundo anglosajón bajo su nombre.
+			La patente (1818): Rudolph Ackermann, un editor y empresario inglés que vio el potencial del invento, compró los derechos para el mercado británico y patentó el diseño en Inglaterra en 1818. Debido a esto, la 			configuración se popularizó en todo el mundo anglosajón bajo su nombre.
 
-		Era moderna: Con la llegada de los automóviles a finales del siglo XIX, el principio de Ackermann pasó de los carruajes a los coches autopropulsados y, hoy en día, sigue siendo la base geométrica de casi cualquier 		vehículo de cuatro ruedas, incluidos los chasis de robótica móvil.
+			Era moderna: Con la llegada de los automóviles a finales del siglo XIX, el principio de Ackermann pasó de los carruajes a los coches autopropulsados y, hoy en día, sigue siendo la base geométrica de casi 				cualquier vehículo de cuatro ruedas, incluidos los chasis de robótica móvil.
 
-		Cuando un vehículo toma una curva, la rueda que queda en el interior de la curva recorre un círculo más pequeño (un radio más corto) que la rueda que queda en el exterior. Para que ambas ruedas giren limpiamente 		sin oponerse entre sí, todas las ruedas del vehículo deben girar alrededor de un mismo punto central común (llamado Centro Instantáneo de Rotación o ICR). Para lograr esto:
+			Cuando un vehículo toma una curva, la rueda que queda en el interior de la curva recorre un círculo más pequeño (un radio más corto) que la rueda que queda en el exterior. Para que ambas ruedas giren 					limpiamente sin oponerse entre sí, todas las ruedas del vehículo deben girar alrededor de un mismo punto central común (llamado Centro Instantáneo de Rotación o ICR). Para lograr esto:
 
- 		- La rueda interna debe girar un ángulo más cerrado.
+ 			- La rueda interna debe girar un ángulo más cerrado.
 
-		- La rueda externa debe girar un ángulo más abierto
+			- La rueda externa debe girar un ángulo más abierto
 
 		- Uso:
 
