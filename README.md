@@ -39,6 +39,10 @@
 
 		- Uso: En el contexto del proyecto, implementamos este sistema mecánico para controlar el guiado del robot mediante un único servomotor central acoplado a un varillaje asimétrico. A diferencia de los sistemas de tracción diferencial (donde el 			giro se logra variando la velocidad de las ruedas laterales), la geometría Ackermann nos permite replicar la conducción de un automóvil real, garantizando trayectorias fluidas, mayor estabilidad a altas velocidades y un control preciso en curvas 		cerradas. Esto resulta fundamental para optimizar los algoritmos de navegación autónoma y seguimiento de líneas en entornos competitivos.
 
+		<div align="center">
+		<img width="1800" height="1100" alt="Angulo-Ackermann-dibujo" src="https://github.com/user-attachments/assets/58cf9434-8c1e-4c22-8b9f-8c61ecde4aa3" />
+		</div>
+
 	* ### Transmisión:
 
 		- Velocidad:
