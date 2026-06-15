@@ -3,7 +3,7 @@
 - #### Opciones de diseño:
 
 	| Foto | Descripción | Nombre |
-	|---|---|---|---|
+	|---|---|---|
 	| a | a | Cyber Cooper |
 	| a | a | Cooper |
 	| a | a | Halbi |
