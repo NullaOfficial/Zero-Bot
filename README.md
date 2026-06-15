@@ -21,21 +21,31 @@
 
 	- ### Dirección:
 
-		- Ackerman: La dirección Ackermann es una configuración geométrica utilizada en el sistema de dirección de vehículos (desde automóviles convencionales hasta robots con ruedas) para resolver el problema de que las ruedas giren en ángulos 					diferentes cuando el vehículo toma una curva. En un sistema de dirección simple (donde ambas ruedas giran exactamente el mismo ángulo), la rueda interna arrastra y patina. La geometría Ackermann evita esto, logrando que el vehículo gire de 			forma suave, sin derrapes y reduciendo drásticamente el desgaste de los neumáticos.
+		- Ackerman: El vehículo utiliza una geometría precisa basada en el **Principio de Dirección Ackermann** para conquistar curvas cerradas con cero deslizamiento lateral y un desgaste mínimo de los neumáticos.
 
-			Aunque el sistema lleva el nombre de Rudolph Ackermann, él no fue el inventor, sino el promotor.
+		La Física Detrás del Principio:** Cuando un vehículo entra en una curva, la rueda delantera interior sigue un radio concéntrico más cerrado y pequeño que la rueda exterior. Si ambas ruedas giraran exactamente al mismo ángulo, los neumáticos 			lucharían entre sí, provocando que el neumático exterior se arrastre, pierda agarre mecánico e introduzca vibraciones estructurales severas que arruinarían el seguimiento visual de los carriles. Para resolver esto, la geometría mecánica obliga a 		la rueda interior a pivotar a un ángulo más profundo que la rueda exterior, asegurando que las cuatro ruedas roten alrededor de un único centro instantáneo de curvatura (ICC) común.
 
-			El origen (1816): El diseño original fue inventado en Munich por el constructor de carruajes alemán Georg Lankensperger. Su objetivo era evitar que los carruajes de caballos volcaran o arrastraran las ruedas al girar en esquinas cerradas.
 
-			La patente (1818): Rudolph Ackermann, un editor y empresario inglés que vio el potencial del invento, compró los derechos para el mercado británico y patentó el diseño en Inglaterra en 1818. Debido a esto, la configuración se popularizó en 			todo el mundo anglosajón bajo su nombre.
 
-			Era moderna: Con la llegada de los automóviles a finales del siglo XIX, el principio de Ackermann pasó de los carruajes a los coches autopropulsados y, hoy en día, sigue siendo la base geométrica de casi cualquier vehículo de cuatro ruedas, 			incluidos los chasis de robótica móvil.
+		La Ejecución Mecánica: Un servo digital **MG996R** de alto par ($11 \text{ kg}\cdot\text{cm}$ de par) se ancla al mamparo delantero mediante un soporte de aluminio en forma de L mecanizado a medida para eliminar la deflexión estructural. 				El brazo del servo acciona una cremallera de dirección de doble enlace conectada a tirantes asimétricos y manguetas de dirección. Los brazos de dirección están angulados hacia el interior, apuntando al centro del eje trasero, completando el 			clásico "Trapezoide de Ackermann". Este diseño mecánico exacto convierte el desplazamiento lineal del servo en ángulos de rueda no lineales de forma automática.
+		El Control Digital y Calibración: El MG996R es controlado por un tren de pulsos PWM por hardware continuo y libre de fluctuaciones (*jitter*) a $50\text{Hz}$ directamente desde el microcontrolador MegaPi. La dirección está rígidamente 					mapeada y calibrada a una banda muerta de software donde los $80^\circ$ representan el centro geométrico absoluto. Los puntos finales mecánicos están limitados por software entre $40^\circ$ (Máximo Izquierda) y $105^\circ$ (Máximo Derecha) para 		evitar que los eslabones de la dirección alcancen un bloqueo mecánico o fuercen los límites de pérdida del motor.
 
-			Cuando un vehículo toma una curva, la rueda que queda en el interior de la curva recorre un círculo más pequeño (un radio más corto) que la rueda que queda en el exterior. Para que ambas ruedas giren limpiamente sin oponerse entre sí, todas 			las ruedas del vehículo deben girar alrededor de un mismo punto central común (llamado Centro Instantáneo de Rotación o ICR). Para lograr esto:
+		Entendiendo la Matemática y Cinemática Ackermann, en robótica móvil tradicional (como los robots de la categoría *RoboMission*), se utiliza la tracción diferencial porque es matemáticamente simple: varías la velocidad de dos motores y el robot  		gira sobre su propio eje. Sin embargo, a altas velocidades, la tracción diferencial es inestable e impredecible.
 
- 			#### 1. La rueda interna debe girar un ángulo más cerrado.
+		La **Geometría Ackermann** resuelve esto mediante un principio puramente mecánico. Para que un vehículo gire sin deslizarse lateralmente, las líneas extendidas desde los ejes de todas las ruedas deben cruzarse en un único punto en el espacio: el 		**Centro Instantáneo de Rotación (CIR)** o ICC.
 
-			#### 2. La rueda externa debe girar un ángulo más abierto
+		La ecuación matemática fundamental que gobierna esta cinemática es:
+
+		$$\cot(\theta_{\text{out}}) - \cot(\theta_{\text{in}}) = \frac{w}{L}$$
+
+		Donde:
+		* $\theta_{\text{in}}$ es el ángulo de giro de la rueda interna.
+		* $\theta_{\text{out}}$ es el ángulo de giro de la rueda externa.
+		* $w$ es el ancho de la vía (*track width* o distancia entre las ruedas frontales).
+		* $L$ es la batalla del carro (*wheelbase* o distancia entre el eje delantero y trasero).
+
+		Dado que la cotangente crece más rápido a ángulos pequeños, esta relación obliga mecánicamente a que $\theta_{\text{in}} > \theta_{\text{out}}$ de forma automática en cualquier curva, abriendo el ángulo de la rueda exterior para que dibuje un 			círculo más grande.
+
 
 		- Uso: En el contexto del proyecto, implementamos este sistema mecánico para controlar el guiado del robot mediante un único servomotor central acoplado a un varillaje asimétrico. A diferencia de los sistemas de tracción diferencial (donde el 			giro se logra variando la velocidad de las ruedas laterales), la geometría Ackermann nos permite replicar la conducción de un automóvil real, garantizando trayectorias fluidas, mayor estabilidad a altas velocidades y un control preciso en curvas 		cerradas. Esto resulta fundamental para optimizar los algoritmos de navegación autónoma y seguimiento de líneas en entornos competitivos.
 
