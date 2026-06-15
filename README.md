@@ -4,9 +4,9 @@
 
 	| Foto | Descripción | Nombre |
 	|---|---|---|
-	| a | a | Cyber Cooper |
-	| a | a | Cooper |
-	| a | a | Halbi |
+	|  | a | Cyber Cooper |
+	| <img width="4064" height="3048" alt="front2" src="https://github.com/user-attachments/assets/ce130237-cc0b-4aa9-a620-0aea287408c2" /> | a | Cooper |
+	| <img width="720" height="1280" alt="front" src="https://github.com/user-attachments/assets/804b3d7f-3500-4351-a917-ccf781029804" /> | a | Halbi |
 	| a | a | The Fridge |
 
  - ### Halbi The Green:
