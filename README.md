@@ -1,4 +1,4 @@
-## 1- Mobilidad y diseño
+# 1- Mobilidad y diseño
 
 - ### Opciones de diseño:
 
