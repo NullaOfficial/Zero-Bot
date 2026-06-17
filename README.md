@@ -1,3 +1,47 @@
+Intro
+====
+
+Este es el repositorio oficial de GitHub propiedad de The LNM, anteriormente conocido como Ars Machina, formado por David Wang Wu y Pedro Catamo. Este repositorio contiene todo el código, la documentación y los recursos de nuestro proyecto. Este es nuestro cuarto año participando en la WRO.
+
+| Miembros | Edad y Fecha de Nacimiento | Colegio | Idiomas | Aspiraciones | Gmail |
+| --- | --- | --- | --- | --- | --- |
+| **David Wang** | 01/04/2011 (15 años) | 3º año en la U.E.C. Eduardo Blanco | Inglés, español, chino mandarín y taiwanés | Informática en la UGMA (Universidad Gran Mariscal de Ayacucho) | davidwangwu104@gmail.com |
+| **Pedro Catamo** | 28/01/2009 (17 años) | 5º año en la U.E.C. Eduardo Blanco | Inglés y español | Ingeniería de Biomateriales en la UNC Humberto Fernández Morán | pedrocatamo.2009@gmail.com |
+
+Foto del carro
+====
+
+<div align="center">
+
+<img width="3060" height="4080" alt="604003001-cc130bf0-8547-48cc-847e-28dbd9029fba" src="https://github.com/user-attachments/assets/f1dc12a1-dbfc-46f3-9a21-a679aa1aa3db" />
+
+</div>
+
+Estructura de carpetas
+====
+
+Esta es la estructura de carpetas de nuestro repositorio:
+
+```
+LNM/
+├── models/
+├── schemes/
+├── src/
+├── t-photos/
+├── v-photos/
+└── video/
+
+```
+
+Donde:
+
+- `models`: Todos los archivos 3D/CAD utilizados en el coche. [ver](./models/README.md)
+- `schemes`: Esquema de cableado, instrucciones de montaje y descripción de los componentes. [ver](./schemes/README.md)
+- `src`: Todo el código necesario para controlar el robot. [ver](./src/README.md) 
+- `t-photos`: Fotos del equipo. [ver](./t-photos/README.md)
+- `v-photos`: Fotos del vehículo. [ver](./v-photos/README.md)
+- `videos`: Vídeos de las actuaciones del robot. [ver](./videos/README.md)
+
 # 1- Mobilidad y diseño
 
 - ### Opciones de diseño:
@@ -18,58 +62,66 @@
 	<img width="560" height="580" alt="604003001-cc130bf0-8547-48cc-847e-28dbd9029fba" src="https://github.com/user-attachments/assets/f1dc12a1-dbfc-46f3-9a21-a679aa1aa3db" />
 
 	</div>
+	
+	- ### Mecanismo de Dirección Ackermann
 
-	- ### Dirección:
+		El vehículo utiliza una geometría precisa basada en el **Principio de Dirección Ackermann** para conquistar curvas cerradas con cero deslizamiento lateral y un desgaste mínimo de los neumáticos.
 
-		- **Ackerman:** El vehículo utiliza una geometría precisa basada en el **Principio de Dirección Ackermann** para conquistar curvas cerradas con cero deslizamiento lateral y un desgaste mínimo de los neumáticos.
+		* **La Física Detrás del Principio:** Cuando un vehículo entra en una curva, la rueda delantera interior sigue un radio concéntrico más cerrado y pequeño que la rueda exterior. Si ambas ruedas giraran exactamente al mismo ángulo, los neumáticos 		lucharían entre sí, provocando que el neumático exterior se arrastre, pierda agarre mecánico e introduzca vibraciones estructurales severas que arruinarían el seguimiento visual de los carriles. Para resolver esto, la geometría 	 mecánica 			obliga a la rueda interior a pivotar a un ángulo más profundo que la rueda exterior, asegurando que las cuatro ruedas roten alrededor de un único centro instantáneo de curvatura (ICC) común.
 
-			* La Física Detrás del Principio: Cuando un vehículo entra en una curva, la rueda delantera interior sigue un radio concéntrico más cerrado y pequeño que la rueda exterior. Si ambas ruedas giraran exactamente al mismo ángulo, los neumáticos 				lucharían entre sí, provocando que el neumático exterior se arrastre, pierda agarre mecánico e introduzca vibraciones estructurales severas que arruinarían el seguimiento visual de los carriles. Para resolver esto, la geometría mecánica 				obliga a la rueda interior a pivotar a un ángulo más profundo que la rueda exterior, asegurando que las cuatro ruedas roten alrededor de un único centro instantáneo de curvatura (ICC) común.
+		* **La Ejecución Mecánica:** Un servo digital **MG996R** de alto par ($11 \text{ kg}\cdot\text{cm}$ de par) se ancla al mamparo delantero mediante un soporte de aluminio en forma de L mecanizado a medida para eliminar la deflexión estructural. 		El brazo del servo acciona una cremallera de dirección de doble enlace conectada a tirantes asimétricos y manguetas de dirección. Los brazos de dirección están angulados hacia el interior, apuntando al centro del eje trasero, completando el 			clásico "Trapezoide de Ackermann". Este diseño mecánico exacto convierte el desplazamiento lineal del servo en ángulos de rueda no lineales de forma automática.
 
-			* La Ejecución Mecánica: Un servo digital **MG996R** de alto par ($11 \text{ kg}\cdot\text{cm}$ de par) se ancla al mamparo delantero mediante un soporte de aluminio en forma de L mecanizado a medida para eliminar la deflexión estructural. 				El brazo del servo acciona una cremallera de dirección de doble enlace conectada a tirantes asimétricos y manguetas de dirección. Los brazos de dirección están angulados hacia el interior, apuntando al centro del eje trasero, completando 				el clásico "Trapezoide de Ackermann". Este diseño mecánico exacto convierte el desplazamiento lineal del servo en ángulos de rueda no lineales de forma automática.
+		* **El Control Digital y Calibración:** El MG996R es controlado por un tren de pulsos PWM por hardware continuo y libre de fluctuaciones (*jitter*) a $50\text{Hz}$ directamente desde el microcontrolador MegaPi. La dirección está rígidamente 			mapeada y calibrada a una banda muerta de software donde los $80^\circ$ representan el centro geométrico absoluto. Los puntos finales mecánicos están limitados por software entre $40^\circ$ (Máximo Izquierda) y $105^\circ$ (Máximo Derecha) para 		evitar que 	los eslabones de la dirección alcancen un bloqueo mecánico o fuercen los límites de pérdida del motor.
 
-			* El Control Digital y Calibración: El MG996R es controlado por un tren de pulsos PWM por hardware continuo y libre de fluctuaciones (*jitter*) a $50\text{Hz}$ directamente desde el microcontrolador MegaPi. La dirección está rígidamente 					mapeada y calibrada a una banda muerta de software donde los $80^\circ$ representan el centro geométrico absoluto. Los puntos finales mecánicos están limitados por software entre $40^\circ$ (Máximo Izquierda) y $105^\circ$ (Máximo 						Derecha) para evitar que los eslabones de la dirección alcancen un bloqueo mecánico o fuercen los límites de pérdida del motor.
+	- ### ¿Qué es la Geometría Ackermann? 
 
-				Entendiendo la Matemática y Cinemática Ackermann, en robótica móvil tradicional (como los robots de la categoría *RoboMission*), se utiliza la tracción diferencial porque es matemáticamente simple: varías la velocidad de dos motores y el 				robot gira sobre su propio eje. Sin embargo, a altas velocidades, la tracción diferencial es inestable e impredecible.
+		Entendiendo la Matemática y Cinemática Ackermann, en robótica móvil tradicional (como los robots de la categoría *RoboMission*), se utiliza la tracción diferencial porque es matemáticamente simple: varías la velocidad de dos motores y el robot 		gira sobre su propio eje. Sin embargo, a altas velocidades, la tracción diferencial es inestable e impredecible.
 
-				La **Geometría Ackermann** resuelve esto mediante un principio puramente mecánico. Para que un vehículo gire sin deslizarse lateralmente, las líneas extendidas desde los ejes de todas las ruedas deben cruzarse en un único punto en el 					espacio: el **Centro Instantáneo de Rotación (CIR)** o ICC.
+		**La Geometría Ackermann** resuelve esto mediante un principio puramente mecánico. Para que un vehículo gire sin deslizarse lateralmente, las líneas extendidas desde los ejes de todas las ruedas deben cruzarse en un único punto en el espacio: el 		**Centro Instantáneo de Rotación (CIR)** o ICC.
 
-				La ecuación matemática fundamental que gobierna esta cinemática es:
+		La ecuación matemática fundamental que gobierna esta cinemática es:
 
-				$$\cot(\theta_{\text{out}}) - \cot(\theta_{\text{in}}) = \frac{w}{L}$$
+		$$\cot(\theta_{\text{out}}) - \cot(\theta_{\text{in}}) = \frac{w}{L}$$
 
-				**Donde:**
-				* $\theta_{\text{in}}$ es el ángulo de giro de la rueda interna.
-				* $\theta_{\text{out}}$ es el ángulo de giro de la rueda externa.
-				* $w$ es el ancho de la vía (*track width* o distancia entre las ruedas frontales).
-				* $L$ es la batalla del carro (*wheelbase* o distancia entre el eje delantero y trasero).
+		Donde:
+		* $\theta_{\text{in}}$ es el ángulo de giro de la rueda interna.
+		* $\theta_{\text{out}}$ es el ángulo de giro de la rueda externa.
+		* $w$ es el ancho de la vía (*track width* o distancia entre las ruedas frontales).
+		* $L$ es la batalla del carro (*wheelbase* o distancia entre el eje delantero y trasero).
 
-				Dado que la cotangente crece más rápido a ángulos pequeños, esta relación obliga mecánicamente a que $\theta_{\text{in}} > \theta_{\text{out}}$ de forma automática en cualquier curva, abriendo el ángulo de la rueda exterior para que 					dibuje un círculo más grande.
+		Dado que la cotangente crece más rápido a ángulos pequeños, esta relación obliga mecánicamente a que $\theta_{\text{in}} > \theta_{\text{out}}$ de forma automática en cualquier curva, abriendo el ángulo de la rueda exterior para que dibuje un 			círculo más grande.
 
-
-				- **Uso:** En el contexto del proyecto, implementamos este sistema mecánico para controlar el guiado del robot mediante un único servomotor central acoplado a un varillaje asimétrico. A diferencia de los sistemas de tracción diferencial 					(donde el giro se logra variando la velocidad de las ruedas laterales), la geometría Ackermann nos permite replicar la conducción de un automóvil real, garantizando trayectorias fluidas, mayor estabilidad a altas velocidades y un 						control preciso en curvas cerradas. Esto resulta fundamental para optimizar los algoritmos de navegación autónoma y seguimiento de líneas en entornos competitivos.
-
-		<div align="center">
-			<img width="567" height="600" alt="17523247_203569336801744_2788986523412924047_n" src="https://github.com/user-attachments/assets/c36a271c-b45c-492a-805e-b107851429cd" />
-		</div>
-
-	- ### Transmisión:
-
-		- Configuración Cinemática: El vehículo opera con una topología de propulsión de **Tracción Trasera (2WD)**. Al separar las dinámicas de dirección (eje delantero) de las fuerzas de tracción (eje trasero), el sistema aísla el control 					direccional de la aplicación del par motor, reflejando las físicas de las carreras de la vida real.
-
-		- Sistema de Actuación: La potencia se entrega a las ruedas motrices traseras a través de dos motores de CC de alto par acoplados a una transmisión interna de engranajes metálicos rígidos. Esta disposición asegura que el deslizamiento de las 			ruedas se minimice durante las rectas rápidas y en la aceleración de salida de las esquinas cerradas de 90 grados.
-    
-		- Mecánica de Neumáticos y Optimización del Agarre: Se montan neumáticos lisos (*slick*) de silicona de alta tracción en el eje trasero para maximizar el coeficiente de fricción estática contra la superficie de la pista, evitando el derrape 			lateral. Las ruedas delanteras utilizan compuestos de caucho de perfil bajo y dureza media para garantizar un agarre de giro inmediato sin trabar los eslabones de la dirección.
 		<div align="center">
 		<img width="567" height="600" alt="17523247_203569336801744_2788986523412924047_n" src="https://github.com/user-attachments/assets/c36a271c-b45c-492a-805e-b107851429cd" />
 		</div>
 
-	- ### Transmisión:
+	- ### Propulsión Electrónica 2WD con Transmisión Mecánica Bifásica 
 
-		- **Configuración Cinemática:** El vehículo opera con una topología de propulsión de **Tracción Trasera (2WD)**. Al separar las dinámicas de dirección (eje delantero) de las fuerzas de tracción (eje trasero), el sistema aísla el control 					direccional de la aplicación del par motor, reflejando las físicas de las carreras de la vida real.
+		La fuerza motriz de la plataforma se genera mediante un sistema de tracción trasera (2WD) de alto rendimiento, el cual rompe con los esquemas tradicionales de acoplamiento directo al integrar una transmisión mecánica desmultiplicada de dos 			velocidades por engranajes cilíndricos rectos.
 
-		- **Sistema de Actuación:** La potencia se entrega a las ruedas motrices traseras a través de dos motores de CC de alto par acoplados a una transmisión interna de engranajes metálicos rígidos. Esta disposición asegura que el deslizamiento de las 			ruedas se minimice durante las rectas rápidas y en la aceleración de salida de las esquinas cerradas de 90 grados.
-    
-		- **Mecánica de Neumáticos y Optimización del Agarre:** Se montan neumáticos lisos (*slick*) de silicona de alta tracción en el eje trasero para maximizar el coeficiente de fricción estática contra la superficie de la pista, evitando el derrape 			lateral. Las ruedas delanteras utilizan compuestos de caucho de perfil bajo y dureza media para garantizar un agarre de giro inmediato sin trabar los eslabones de la dirección.
+		* **Arquitectura del Sistema de Transmisión:** A diferencia de las configuraciones comunes que acoplan la rueda directamente a la caja reductora del motor, este diseño monta el motor RS380 en una disposición paralela superior sobre un bloque de 		soporte rígido. La potencia se transfiere desde el eje primario del motor hacia un eje secundario de tracción inferior mediante un tren de engranajes expuesto con dentado recto. Este sistema de dos velocidades mecánicas intercambiables permite 		configurar el robot según las exigencias de la pista:
+  		1. **Relación de Fuerza/Torque (Primera Velocidad):** Optimiza el desmultiplique para obtener la máxima aceleración y un control milimétrico en curvas cerradas u obstáculos, ideal para tramos revirados. 
+  		2. **Relación de Velocidad Final (Segunda Velocidad):** Reduce la pérdida de revoluciones para aprovechar la inercia lineal en rectas largas, garantizando una alta velocidad de crucero sin saturar el consumo eléctrico.
+
+		<div align="center">
+		<img width="515" height="218" alt="Sistema de transmision de 2 velocidades K-O-M-R-A-D" src="https://github.com/user-attachments/assets/da8175e6-313d-42d6-bd3b-b1318082536f" />
+		</div>
+
+		* **Especificaciones Técnicas de los Motores (RS380):** El bloque motriz confía en motores de CC con escobillas imantadas, seleccionados específicamente por su curva de respuesta dinámica y tolerancia a picos transitorios de carga.
+	    * **Voltaje Nominal:** $12\text{V}$ (Operando a un voltaje nominal de celda de $11.1\text{V}$ mediante una batería LiPo 3S para asegurar la estabilidad térmica).
+ 		* **Corriente de Vacío (No-load):** $0.4\text{A}$ | **Corriente de Arranque/Pérdida (Stall):** $4.5\text{A}$ de protección en el driver.
+ 		* **Velocidad de Rotación de Fábrica:** $15000\text{ RPM}$ en el núcleo del motor, reducida internamente y ajustada finalmente por el engranaje externo para entregar una velocidad final estimada de transferencia de aprox. $450\text{ RPM}$ en el 		eje de la rueda.
+
+		* **Análisis Cinemático y Cálculo de la Velocidad Teórica Absoluta:**
+		Para determinar el rendimiento del chasis en pista y calibrar las ventanas de tiempo por vuelta (como el parámetro de control `lap_time = 4.3`), se realiza el cálculo cinemático basado en el diámetro de las ruedas motrices de $6.5\text{ cm}$ 			($0.065\text{ m}$). Evaluamos la circunferencia de rodadura ($C$) y la velocidad lineal máxima teórica ($V$):
+
+		$$C = \pi \times 0.065\text{ m} \approx 0.2041\text{ m}$$
+
+		Transformando las revoluciones por minuto del eje secundario de la transmisión a revoluciones por segundo y multiplicando por el desarrollo de la circunferencia, obtenemos la velocidad de avance del chasis:
+
+		$$V = \frac{450\text{ RPM}}{60} \times 0.2041\text{ m} \approx 1.53\text{ m/s}$$
+
+		Este valor de $1.53\text{ m/s}$ representa la velocidad límite ideal de la plataforma. En condiciones reales de competencia, este vector se modula por software mediante los comandos de velocidad (`speed=90` u `80`) para absorber la fricción 			estática del suelo, la resistencia al avance de los rodamientos y las demandas instantáneas de corriente solicitadas por la MegaPi al gestionar el cambio de inercias.
 
 
 	- ### 3D Printed Parts:
@@ -111,7 +163,6 @@
 	   			- **¿Se recomienda usarla a futuro?**
   
    					Sí, pero bajo ciertas condiciones. Sigue siendo una máquina excepcionalmente rápida y robusta para piezas de ingeniería. Sin embargo, debes tener en cuenta que la K1 original no es compatible con sistemas de impresión multicolor 						multihilo modernos de manera nativa (esa característica se reservó para la serie K2 con el nuevo CFS).
-
 
 		- **PETG vs PLA:**
 
@@ -179,9 +230,9 @@
 
 # 3.  Software
 
-- ### Utils:
+- ### Utilidades:
 
-	- Color Tester:
+	- Color Tester: 
 
 	- ROI Detector:
 
