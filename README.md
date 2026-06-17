@@ -49,6 +49,17 @@
 				- **Uso:** En el contexto del proyecto, implementamos este sistema mecánico para controlar el guiado del robot mediante un único servomotor central acoplado a un varillaje asimétrico. A diferencia de los sistemas de tracción diferencial 					(donde el giro se logra variando la velocidad de las ruedas laterales), la geometría Ackermann nos permite replicar la conducción de un automóvil real, garantizando trayectorias fluidas, mayor estabilidad a altas velocidades y un 						control preciso en curvas cerradas. Esto resulta fundamental para optimizar los algoritmos de navegación autónoma y seguimiento de líneas en entornos competitivos.
 
 		<div align="center">
+			<img width="567" height="600" alt="17523247_203569336801744_2788986523412924047_n" src="https://github.com/user-attachments/assets/c36a271c-b45c-492a-805e-b107851429cd" />
+		</div>
+
+	- ### Transmisión:
+
+		- Configuración Cinemática: El vehículo opera con una topología de propulsión de **Tracción Trasera (2WD)**. Al separar las dinámicas de dirección (eje delantero) de las fuerzas de tracción (eje trasero), el sistema aísla el control 					direccional de la aplicación del par motor, reflejando las físicas de las carreras de la vida real.
+
+		- Sistema de Actuación: La potencia se entrega a las ruedas motrices traseras a través de dos motores de CC de alto par acoplados a una transmisión interna de engranajes metálicos rígidos. Esta disposición asegura que el deslizamiento de las 			ruedas se minimice durante las rectas rápidas y en la aceleración de salida de las esquinas cerradas de 90 grados.
+    
+		- Mecánica de Neumáticos y Optimización del Agarre: Se montan neumáticos lisos (*slick*) de silicona de alta tracción en el eje trasero para maximizar el coeficiente de fricción estática contra la superficie de la pista, evitando el derrape 			lateral. Las ruedas delanteras utilizan compuestos de caucho de perfil bajo y dureza media para garantizar un agarre de giro inmediato sin trabar los eslabones de la dirección.
+		<div align="center">
 		<img width="567" height="600" alt="17523247_203569336801744_2788986523412924047_n" src="https://github.com/user-attachments/assets/c36a271c-b45c-492a-805e-b107851429cd" />
 		</div>
 
